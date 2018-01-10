@@ -43,13 +43,11 @@ export default class ClusteredMapView extends PureComponent {
   }
 
   componentDidMount() {
-    if(this.props.data && this.props.data.length > 0){
-      this.clusterize(this.props.data)
-    }
+    this.clusterize(this.props.data)
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.data !== nextProps.data && this.props.data.length > 0)
+    if (this.props.data !== nextProps.data)
       this.clusterize(nextProps.data)
   }
 
