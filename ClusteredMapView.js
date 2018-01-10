@@ -9,7 +9,7 @@ import {
   LayoutAnimation
 } from 'react-native'
 // map-related libs
-mport { MapView } from 'expo'
+import { MapView } from 'expo'
 import SuperCluster from 'supercluster'
 import GeoViewport from '@mapbox/geo-viewport'
 // components / views
