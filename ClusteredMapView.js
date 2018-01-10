@@ -58,6 +58,9 @@ export default class ClusteredMapView extends PureComponent {
   }
 
   mapRef = (ref) => {
+    if (this.props.ref){
+      this.props.ref(ref);
+    }
     this.mapview = ref
   }
 
