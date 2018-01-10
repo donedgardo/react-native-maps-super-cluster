@@ -3,8 +3,11 @@
 // base libs
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Marker } from 'react-native-maps'
-import { Text, View, StyleSheet } from 'react-native'
+import { MapView } from 'expo'
+
+import { Text, View, StyleSheet } from 'react-native';
+
+const { Marker } = MapView;
 
 export default class ClusterMarker extends Component {
   constructor(props) {
